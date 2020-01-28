@@ -7,7 +7,7 @@ provides for *2D retro game programming* at an introductory level.
 ![Demo Game 4 image](/Images/DemoGame4.jpg)
 (Screenshot from DemoProgram4).
 
-This is possibly of interest to those new to programming, since this 
+This is possibly of interest to those new(ish) to programming, since this 
 can be used as-is, without needing to understand C#<->C++ interop, or
 the SDL event loop, or set up any complex stuff.  Of course, this could 
 be a springboard for further understanding of those things.
@@ -86,6 +86,12 @@ Sound
 -----
 You can easily load WAV file sound effects, and play them in a single
 line of code within your OnFrameAdvance() function.
+
+The Main entry point
+--------------------
+Don't forget to check out the Program.cs to see how everything kicks off,
+and I also suggest how to pre-load all your images and sound effects,
+ready for use in the main game class.
 
 Linux
 -----
