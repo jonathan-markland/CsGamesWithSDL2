@@ -48,7 +48,8 @@ to store its data model!
 The two functions you need to write are:
 
 - *OnPaint* : This function must take your data model, and draw it
-  to your 'retro screen' bitmap using the 'window.Renderer' object supplied.
+  using the 'window.Renderer' object supplied.  The library will
+  call your OnPaint as and when necessary.
 
 - *OnFrameAdvance* : This function is called 50 times per second.
   You must take the current state of your data model, and update it
@@ -59,15 +60,18 @@ The two functions you need to write are:
 
 Graphics
 --------
-You define a "retro screen" which is an off-screen bitmap,
-onto which your OnPaint function can draw bitmapped images known
-as "Textures".
+The library provides you with a "retro screen" which is an off-screen 
+bitmap, of dimensions that you specify.  Usually this would be something 
+suitably low-res like 320 x 240, since we are being retro here ;)  
+Your OnPaint function draws bitmapped images known as "Textures" onto
+this retro screen.
 
-This has the option of colour-key transparency, and image stretching.
+You have the option of colour-key transparency in your bitmap images, 
+and image stretching.
 
 I also support drawing solid-filled rectangles.
 
-(This is enough to do quite a lot of retro stuff.)
+(This is simple, but enough to do quite a lot of retro stuff.)
 
 User Input
 ----------
@@ -75,6 +79,8 @@ My SDLCoverLibrary exposes limited user input:  I support
 cursor key movement, and 'Z' to fire.  If you need more, the core
 library is pretty easy to extend, but it isn't my intention for this
 library to be all-encompassing, this is for introductory purposes.
+
+Check out the Input class to see the event information you receive.
 
 Sound
 -----
@@ -93,7 +99,7 @@ The demonstration programs included
 
 DemoProgram1
 ------------
-Static screen demo.
+A static screen demo.
 Loads map background and allied / enemy fleet symbols from Beach Head.
 The DemoGameImplementation.cs file has some explanation in the two
 event handling functions.
