@@ -7,10 +7,15 @@ provides for *2D retro game programming* at an introductory level.
 ![Demo Game 4 image](/Images/DemoGame4.jpg)
 (Screenshot from DemoProgram4).
 
-This is possibly of interest to those new(ish) to programming, since this 
-can be used as-is, without needing to understand C#<->C++ interop, or
-the SDL event loop, or set up any complex stuff.  Of course, this could 
-be a springboard for further understanding of those things.
+This is possibly of interest to those new(ish) to C# programming, who
+might like to have a fun context in which to practice devising data models,
+and implementing decision making logic as C# code, and in doing so, make
+some exciting games!
+
+This can be used as-is, without needing to download any third party DLLs, 
+interoperate with C++, or understand event loops, or set up any complex 
+stuff.  Of course, this could be a springboard for further understanding 
+of those things.
 
 Note:  Retro means 80's, rather than mid-90's!
 
